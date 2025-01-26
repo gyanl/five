@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Five!</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preload" href="5YearsofMvTVF.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="MVOfficeVF.ttf" as="font" type="font/ttf" crossorigin>
+
+</head>
+
+<style>
+  @font-face {
+    font-family: '5YearsofMvTVF';
+    src: url('5YearsofMvTVF.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-stretch: 75% 125%;
+    font-style: normal;
+    font-display: swap;
+    color: #FFF;
+  }
+
+  .font-mvt-five {
+    font-family: '5YearsofMvTVF', sans-serif;
+  }
+
+  @font-face {
+    font-family: 'MVOfficeVF';
+    src: url('MVOfficeVF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body {
+    background: #F00;
+    font-family: 'MVOfficeVF', sans-serif;
+    margin: 10vw;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #five {
+    font-size: 67vw;
+    font-weight: 40vw;
+    font-variation-settings: 'wght' 70;
+    font-stretch: 100%;
+    font-style: normal;
+    animation: pulse 8s infinite cubic-bezier(0.4, 0, 0.5, 1);
+  }
+
+  @keyframes pulse {
+    0% {
+      font-variation-settings: 'wght' 0;
+    }
+
+    50% {
+      font-variation-settings: 'wght' 100;
+    }
+
+    100% {
+      font-variation-settings: 'wght' 0;
+    }
+  }
+
+  .section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #FFF;
+  }
+
+  .section p {
+    font-size: 20px;
+    font-variation-settings: 'wght' 400;
+    font-stretch: 100%;
+    font-style: normal;
+    flex: 1;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+</style>
+
+<body>
+
+  <div class="section">
+    <p>
+      Five years <br>
+      of ManVsType
+    </p>
+
+    <p>
+      Uday Park <br>
+      1st February 7pm
+    </p>
+
+    <p>
+      Save the Date
+    </p>
+
+    <p>
+    </p>
+
+  </div>
+
+
+  <div id="five" class="font-mvt-five">
+    5
+  </div>
+
+  <!-- Add this script before the closing body tag -->
+  <script>
+
+  </script>
+
+</body>
+
+</html>
