@@ -25,8 +25,8 @@
     --black: #000;
     --white: #FFF;
 
-    --pulse-duration: 5s;
-    --text-color-duration: 15s;
+    --pulse-duration: 4s;
+    --text-color-duration: 12s;
 
   }
 
@@ -54,7 +54,7 @@
     background: var(--background-color);
     font-family: 'MVOfficeVF', sans-serif;
     margin: 10vw;
-    font-weight: 600;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,7 +67,7 @@
     font-size: 67vw;
     font-stretch: 100%;
     font-style: normal;
-    animation: pulse var(--pulse-duration) infinite cubic-bezier(0.4, 0, 0.5, 1), text-color-bwr var(--text-color-duration) infinite linear;
+    animation: pulse var(--pulse-duration) infinite cubic-bezier(0.3, 0.04, 0.65, 1), text-color-bwr var(--text-color-duration) infinite linear;
   }
 
   @keyframes pulse {
