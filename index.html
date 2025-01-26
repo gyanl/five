@@ -53,18 +53,16 @@
   body {
     background: var(--background-color);
     font-family: 'MVOfficeVF', sans-serif;
-    margin: 10vw;
     font-weight: 400;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     line-height: 1.35;
+    margin: 0;
   }
 
   #five {
+    text-align: center;
+    margin-top: -20vw;
     line-height: 1.85;
     z-index: 10;
-    font-size: 67vw;
     font-stretch: 100%;
     font-style: normal;
     animation: pulse var(--pulse-duration) infinite cubic-bezier(0.3, 0.04, 0.65, 1), text-color-bwr var(--text-color-duration) infinite linear;
@@ -72,19 +70,23 @@
 
   @keyframes pulse {
     0% {
-      font-variation-settings: 'wght' 0;w
+      font-variation-settings: 'wght' 0;
+      font-size: 65vw;
     }
 
     92% {
       font-variation-settings: 'wght' 100;
+      font-size: 75vw;
     }
 
     93% {
       font-variation-settings: 'wght' 0;
+      font-size: 65vw;
     }
 
     100% {
       font-variation-settings: 'wght' 0;
+      font-size: 65vw;
     }
   }
 
@@ -154,6 +156,7 @@
     flex-direction: row;
     justify-content: flex-start;
     z-index: 1;
+    margin: 10vw;
   }
 
   .section p {
@@ -170,7 +173,6 @@
 
 
     body{
-      margin: 8vw;
       justify-content: space-between;
       height: 100vh;
     }
@@ -180,6 +182,7 @@
     }
 
     .section {
+      margin: 8vw;
       flex-direction: column;
     }
 
