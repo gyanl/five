@@ -25,8 +25,8 @@
     --black: #000;
     --white: #FFF;
 
-    --pulse-duration: 4s;
-    --text-color-duration: 12s;
+    --pulse-duration: 5s;
+    --text-color-duration: 15s;
 
   }
 
@@ -53,7 +53,7 @@
   body {
     background: var(--background-color);
     font-family: 'MVOfficeVF', sans-serif;
-    font-weight: 400;
+    font-variation-settings: 'wght' 300;
     line-height: 1.35;
     margin: 0;
   }
@@ -71,7 +71,7 @@
   @keyframes pulse {
     0% {
       font-variation-settings: 'wght' 0;
-      font-size: 65vw;
+      font-size: 72vw;
     }
 
     92% {
@@ -81,12 +81,12 @@
 
     93% {
       font-variation-settings: 'wght' 0;
-      font-size: 65vw;
+      font-size: 70vw;
     }
 
     100% {
       font-variation-settings: 'wght' 0;
-      font-size: 65vw;
+      font-size: 72vw;
     }
   }
 
@@ -161,7 +161,6 @@
 
   .section p {
     font-size: 20px;
-    font-variation-settings: 'wght' 400;
     font-stretch: 100%;
     font-style: normal;
     flex: 1;
