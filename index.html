@@ -12,10 +12,14 @@
   <link rel="preload" href="5YearsofMvTVF.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="MVOfficeVF.ttf" as="font" type="font/ttf" crossorigin>
 
+  <meta property="og:title" content="ManVsType turns 5!">
+  <meta property="og:description" content="A celebration of 5 years of ManVsType">
+  <meta property="og:image" content="https://5yearsofmvt.fun/og-image.jpg">
+  <meta property="og:url" content="https://5yearsofmvt.fun">
+
 </head>
 
 <style>
-
   :root {
     --background-color: var(--red);
     --foreground-color: var(--black);
@@ -25,8 +29,8 @@
     --black: #000;
     --white: #FFF;
 
-    --pulse-duration: 5s;
-    --text-color-duration: 15s;
+    --pulse-duration: 4s;
+    --text-color-duration: 12s;
 
   }
 
@@ -56,12 +60,20 @@
     font-variation-settings: 'wght' 300;
     line-height: 1.35;
     margin: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .bold {
+    font-variation-settings: 'wght' 600;
   }
 
   #five {
-    text-align: center;
-    font-size: 75vw;
-    margin-top: -20vw;
+    position: absolute;
+    left: 8vw;
+    bottom: -150px;
+    overflow-y: visible;
+    font-size: 400px;
     line-height: 1.85;
     z-index: 10;
     font-stretch: 100%;
@@ -92,56 +104,70 @@
   }
 
   @keyframes bg-color-rbw {
-    0%, 30% {
+
+    0%,
+    30% {
       background-color: var(--red);
     }
-    
-    33%, 63% {
+
+    33%,
+    63% {
       background-color: var(--black);
     }
-    
-    66%, 96% {
+
+    66%,
+    96% {
       background-color: var(--white);
     }
-    
+
     100% {
       background-color: var(--red);
     }
   }
 
   @keyframes text-color-bwr {
-    0%, 30% {
+
+    0%,
+    30% {
       color: var(--black);
     }
-    33%, 63% {
+
+    33%,
+    63% {
       color: var(--white);
     }
-    
-    66%, 96% {
+
+    66%,
+    96% {
       color: var(--red);
     }
-    
+
     100% {
       color: var(--black);
     }
   }
-  
-  .text-color-wrb{
+
+  .text-color-wrb {
     animation: text-color-wrb var(--text-color-duration) infinite linear;
   }
 
   @keyframes text-color-wrb {
-    0%, 30% {
+
+    0%,
+    30% {
       color: var(--white);
     }
-    33%, 63% {
+
+    33%,
+    63% {
       color: var(--red);
     }
-    
-    66%, 96% {
+
+    66%,
+    96% {
       color: var(--black);
     }
-    
+
     100% {
       color: var(--white);
     }
@@ -165,10 +191,14 @@
     margin-block-end: 0;
   }
 
+  a {
+    color: inherit;
+  }
+
   @media (max-width: 768px) {
 
 
-    body{
+    body {
       justify-content: space-between;
       height: 100vh;
     }
@@ -192,18 +222,22 @@
 <body class="bg-color-rbw">
 
   <div class="section text-color-wrb">
-    <p>
+    <p class="bold">
       Five years <br>
       of ManVsType
     </p>
 
     <p>
-      Uday Park <br>
+      <a href="https://maps.app.goo.gl/MtNicyhcVtkB9Bq18?g_st=com.google.maps.preview.copy">
+        Uday Park </a> <br>
       1st February 7pm
+
     </p>
 
     <p>
-      Save the Date
+      <a href="hhttps://calendar.app.google/oihumiCKqba1qSkk8">
+        RSVP Here
+      </a>
     </p>
 
     <p>
@@ -215,13 +249,6 @@
   <div id="five" class="text-color-bwr font-mvt-five">
     5
   </div>
-
-  <!-- Add this script before the closing body tag -->
-  <script>
-
-
-
-  </script>
 
 </body>
 
